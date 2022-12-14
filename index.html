@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ro">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant La Ursu</title>
+    <meta name="author" content="Maria Ursu">
+    <meta name="keywords" content="Restaurant, Mâncare, Meniu, Comandă, Munte">
+    <meta name="description" content="Restaurantul La Ursu este o tradiție de familie încă din anul 1991. Aflat la poalele Transilvaniei, de peste 30 de ani încântă brașovenii cu rețetele lor bine alese">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+        
+        <style>
+            /* navbar */
+            .main-navbar {
+                background-color: rgb(48, 136, 213);
+            }
+    
+            .main-navbar .navbar-brand {
+                font-size: 30px;
+                line-height: 50px;
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+    
+            .main-navbar .navbar-brand img {
+                height: 50px;
+                margin-right: 10px;
+                vertical-align: bottom;
+            }
+    
+            .main-navbar .nav-link {
+                color: rgb(14, 9, 9);
+            }
+    
+            .main-navbar .nav-link:hover {
+                text-decoration: underline;
+            }
+    
+    
+            /* slider */
+            .carousel-item .ratio img {
+                object-fit: cover;
+            }
+    
+            .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.3); 
+            }
+    
+            .carousel-caption .title {
+                font-size: 1.25rem;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+    
+            /* cards */
+            .card img {
+                object-fit: cover;
+            }
+    
+            .card .card-title {
+                font-size: 1.25rem;
+            }
+    
+            /* gallery */
+            .galerie img {
+                object-fit: cover;
+            }
+    
+            /* footer */
+            .main-footer {
+                background-color:rgb(115, 184, 244);
+            }
+    
+            .main-footer .logo {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+    
+            .main-footer .logo img {
+                height: 30px;
+                margin-right: 6px;
+                vertical-align: bottom;
+            }
+
+            nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0 0 0 20px;
+            padding: 0;
+            }
+
+            nav li {
+            margin: 0 10px 0 0; 
+            }
+        
+            .meniu { 
+            height: 25px;
+            border-color: white;
+            background-color:rgb(211, 235, 255);
+            border-bottom: 3px solid white;
+            border-top: 3px solid white;
+            background: hsl(195, 98%, 84%);
+            }
+        
+            iframe {
+            border: 1px solid black;
+            width: 100%;
+            }
+            
+            .text-center { 
+            color: black;
+            }
+
+            .buton {
+            text-decoration: none;
+            text-emphasis: bold;
+            color: rgb(0, 0, 0)
+
+}
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-md main-navbar sticky-top">
+        <nav class="container-xxl">
+            <p class="navbar-brand">
+                <a class="nav-link" href="index.html">
+                    <img src="logo.png">Restaurant La Ursu
+                </a>
+            </p>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav main-menu flex-column flex-md-row">
+                    <li class="nav-item"><a class="nav-link" href="#servicii">Servicii</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#meniu">Meniu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+
+    <div id="slider" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="4" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                    <img src="imagini/carusel 1.jpg" class="d-block w-100" alt="sală cu mese pătrate cu câte patru scaune de lemn, pe care sunt pahare și tacâmuri">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="imagini/carusel 2.jpg" class="d-block w-100" alt="sală cu mese pătrate cu câte patru scaune de lemn, pe care sunt pahare și tacâmuri pe timp de noapte">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="imagini/carusel 3.jpg" class="d-block w-100" alt="un bar dintr-un restaurant cu multe băuturi și pahare">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="imagini/carusel 4.jpg" class="d-block w-100" alt="o domnișoară barmaniță care zâmbește cu o tavă cu trei pahare cu bere">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="imagini/carusel 5.jpg" class="d-block w-100" alt="o farfurie cu un burger mare cu sos și cartofi prăjiți">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">          
+                <h1 id="servicii">Bine ai (re)venit <em>La Ursu</em>!</h1>
+            </div>  
+        </div>    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">          
+                <h2 id="servicii">Servicii</h2>
+            </div>  
+        </div>
+        <div class="container mt-6">
+            <p>
+                Restaurantul La Ursu este o bucătărie tradițională transilvăneană concepută în 1991. Este un loc plin de culoare, gusturi și multe bunătățuri. Livrăm pentru toți prietenii noștri din Brașov și apropiere la domiciliul sau birou în condiții de maximă igienă și siguranță. Iar dacă treceți prin Poiana Brașov, este musai să ne faceți o vizită. Ne găsiți în Poiana Ursului 1, de Luni până Duminică între orele 10:00 -23:00!</p>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Mâncare
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    Vă oferim preparate foarte gustoase, cu ingrediente alese, care sunt un deliciu pe papilele gustative. Cum și urșii sunt omnivori, avem preparate de toate felurile: de vegetarieni, cu carne, picante și nepicante.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Băutură
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  Avem o gamă variată de băuturi pentru toate vârstele și anotimpurile. Fie că vorbim de un ceai cald cu miere sau ciocolată caldă, perfecte pentru zilele friguroase, sau vin roșu care merge de minune la un piept de rață cu piure de cartofi.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Muzică
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    În fiecare săptămâna va fi câte un concert cu muzică live de la ora 20, astfel încât să inducem o stare cât mai plăcută și relaxantă. Sunteți invitați să savurați în continuare mâncarea într-o atmosferă ambientală sau să vă ridicați să dansați.
+                </div>
+              </div>
+            </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour"> 
+                Evenimente <span class="badge bg-secondary">New</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                    Localul poate fi închiriat și pentru petreceri și ocazii speciale. Aveți la dispoziție barul, restaurantul și terasa pentru a organiza momente de neuitat în inima Ardealului.
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-12">          
+                <h2 id="meniu">Meniu</h2>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-12">          
+                <p>
+                    Avem un meniu diversificat, întrucât ne dorim să nimerim și să mulțumim toate gusturile clienților noștri. Specialitățile noastre sunt: pește, paste, burger și ca desert clătitele. 
+                </p>
+            </div>  
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="imagini/fish2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pește cu cartofi</h5>
+                  <p class="card-text">Peștele cu garnitură de cartofi este o rețetă gustoasă și sățioasă care conține: pește proaspăt, cartofi, cimbru, pătrunjel, mărar, sare, piper, zeamă de lămâie, ulei de măpsline și o căpățână de usturoi.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagini/burger.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Grilled cheese sandwich</h5>
+                  <p class="card-text">Niciodată nu strică un sandwich, mai ales dacă e cu de toate. Rețeta noastră este una bogată și conține următoarele ingrediente: șuncă, ketchup, maioneză, castraveți murați, ceapă, muștar, salată.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagini/pasta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Paste bolognese</h5>
+                  <p class="card-text">Dacă pastele sunt mâncarea ta preferată, cu siguranță nu ai cum să dai greș cu pastele noastre bolognese. Ele conțin spaghete, carne de vita tocată, ulei de măsline, ceapă, morcov, țelină.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagini/fluffy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Clătite pufoase</h5>
+                  <p class="card-text">Pe cât de puține ingrediente au clătitele, pe atât de delicioase sunt. Clătitele pufoase ,,La Ursu” au fructe de pădure și gem natural de vișine. Se pot servi și cu ciocolată sau miere și au un aluat pufos, în stil american.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="row">
+            <div class="col-12">          
+                <p>
+                    <h3> Divers </h3>
+                    <nav class="meniu">
+                        <p>Rață la cuptor cu piure de mazăre</p>            
+                    </nav>
+                    <nav class="meniu">
+                        <p>Ciorbă rădăuțeană</p>            
+                    </nav>
+                        <nav class="meniu">
+                        <p>Sarmale cu mămăligă și smântână</p>            
+                    </nav>
+                    <nav class="meniu">
+                         <p>Supă de pui cu tăiței</p>            
+                        </nav>
+                  
+                  
+                         <h3> Vegetarian</h3>
+                         <nav class="meniu">
+                            <p>Cașcaval pane cu piure de cartofi</p>            
+                        </nav>
+                        <nav class="meniu">
+                            <p>Salata Caesar</p>            
+                        </nav>
+                            <nav class="meniu">
+                            <p>Cartofi prăjiți cu cașcaval ras</p>            
+                        </nav>
+                        <nav class="meniu">
+                             <p>Supă cremă de ciuperci</p>           
+                        </nav>
+                      
+                    <h3> Desert </h3>
+                    <nav class="meniu">
+                            <p>Lava cake</p>            
+                    </nav>
+                       <nav class="meniu">
+                             <p>Cheese cake</p>            
+                        </nav>
+                        <nav class="meniu">
+                             <p>Tiramisu</p>            
+                        </nav>
+                                <nav class="meniu">
+                            <p>Gogoși </p>            
+                        </nav>
+                        
+                    <h3> Băuturi </h3>
+                    <nav class="meniu">
+                            <p>Vin</p>            
+                    </nav>
+                        <nav class="meniu">
+                            <p>Bere/Cidru</p>            
+                    </nav>
+                        <nav class="meniu">
+                             <p>Limonadă</p>            
+                    </nav>
+                        <nav class="meniu">
+                              <p>Ceai</p>            
+                    </nav>
+                </p>
+            </div>  
+        </div>
+        <hr />
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">          
+                <h2 id="contact">Contact</h2>
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3>
+                    Telefon : 0712345678 </h3>
+                   <h3>E-mail : restaurantursu@yahoo.com </h3> 
+                   <p>Unde le stă mai bine urșilor decât la răcoare? Ne găsiți în Poiana Brașov, pe strada Poiana Ursului 1. Deși temperaturile sunt destul de friguroase iarna, vă promitem peisaje de poveste și o atmosferă foarte călduroasă. În zonă se află multe atracții turistice, potrivite pentru toate vârstele. Te așteptăm în inima muntelui , să mănânci cum se cuvine! 
+                </p>
+                <button type="button" class="btn btn-info btn-rounded"><a class="buton" href=mailto:restaurantursu@yahoo.com?subject=rezervare>Contactează-ne</a></button> 
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="rounded w-100"></div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5536.089308562568!2d23.424675544890313!3d46.07015077780198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea5af04ecc305%3A0x4784d60e83df8031!2sPoiana%20Ursului!5e0!3m2!1sro!2sro!4v1670930815186!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h3>Clienți care recomandă <em>La Ursu</em></h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+              </div>
+        </div>
+
+        <hr />
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">          
+                <h2 id="galerie">Galerie</h2>
+            </div>  
+        </div>
+        <h3>Echipa noastră</h3>
+
+        <div class="row galerie">
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="./imagini/buni.jpg" alt="o doamnă cu ochelari și părul scurt care are un câine în mână" />
+                <figcaption>Buni Maia: Manager</figcaption>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="./imagini/alina.jpg" alt="o fată cu părul brunet care stă în fața unui fundal cărămiziu" />
+                <figcaption>Andreea: Șef de sală</figcaption>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="./imagini/andreea.jpg" alt="o fată blondă cu palton gri care este pe stradă și zâmbește" />
+                <figcaption>Alina: Ospătar</figcaption>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/Sofia.jpg" alt="o fată cu părul brunet care are un palton maro" />
+                <figcaption>Sofia: Ospătar</figcaption>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/iulian.jpg" alt="un domn cu ochelari îmbrăcat în halat de bucătărie" />
+                <figcaption>Iulian: Bucătar</figcaption>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/Sandu.jpg" alt="un tânăr care zâmbește cu un tricou albastru" />
+                <figcaption>Sandu: Ajutor bucătar</figcaption>
+            </div>
+            <h3>Momente</h3>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/muzica.jpg" alt="o încăpere cu lumini de petrecere" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/mâncare.jpg" alt="o masă cu farfurii de ciorbă, pui și pâine" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/clienti.jpg" alt="două fete care stau la masă și beau un pahar de vin" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/bautura.jpg" alt="trei mese pregătite cu pahare și tacâmuri" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/seara.jpg" alt="un restaurant cu mese pline de clienți" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-thumbnail w-100" src="imagini/desert.jpg" alt="opt prățituri și pahare cu suc de fructe" />
+            </div>
+        </div>
+    </div>
+</div>
+</div>   
+
+<footer class="main-footer mt-5">
+    <div class="container">
+        <div class="d-flex justify-content-between pt-3">
+            <a href="index.html" class="logo">
+                <img src="logo.png">Restaurant La Ursu
+            </a>
+
+            <ul class="nav justify-content-end list-unstyled d-flex">
+                <li class="me-3">
+                    <a href="https://www.facebook.com/HotelT" target="_blank" class="logo">
+                        <img src="facebook.png" alt="iconița de la rețeaua de socializare facebook" />
+                    </a>
+                </li>
+                <li class="me-3">
+                    <a href="https://twitter.com/HotelT" target="_blank" class="logo">
+                        <img src="twitter.png" class="logo" alt="iconița de la rețeaua de socializre twitter" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/hotelt/" target="_blank" class="logo">
+                        <img src="instagram.png" class="logo" alt="iconița de la rețeaua de socializare instgram" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <div class= "logo text-muted pb-3">Program: Luni-Duminică orele 10-23</div>
+            <div class= "logo text-muted pb-3">© 2022 Company, Inc</div>
+        </div>
+    </div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
